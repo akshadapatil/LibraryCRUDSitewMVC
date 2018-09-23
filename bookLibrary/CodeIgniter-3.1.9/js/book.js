@@ -44,24 +44,6 @@ var BOOK = function(){
         $("#addBookPopup").css("display", "none");
         $("body").css("overflow", "visible");
     };
-    
-    var deleteBookRecord = function() {
-
-        var deleteData = {
-            'idbooks' : $(this).parent().attr("value")
-        };
-
-        $.ajax({
-            type    : "POST",
-            url     : 'index.php/book/deleteBook',
-            data    : deleteData,
-            success: function(result){
-                alert(result);
-                window.location.reload();
-            }
-        });
-        return false;
-    };
       
     var borrowBook = function()
     {
@@ -137,11 +119,9 @@ var BOOK = function(){
     };
       
     var bindEvents = function() {
-       // $("#signup").bind("click", signUpUser);
         $("#add-book").bind("click", showAddBookPopup);  
         $("#submitBook").bind("click", submitAddBookFormPopup);
         $("#close-button").bind("click", closeAddBookFormPopup);
-       // $(".delete").bind("click", deleteBookRecord);
        $(".borrow").bind("click", borrowBook);
        $(".return").bind("click", returnBook);
        $("#logout").bind("click", logout);

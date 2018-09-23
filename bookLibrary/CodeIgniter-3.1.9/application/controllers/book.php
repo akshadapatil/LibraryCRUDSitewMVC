@@ -54,18 +54,6 @@ class Book extends CI_Controller{
     }
     
     /**
-     * This function is used to delete a book from the database.
-     */
-    public function deleteBook()
-    {
-        $data = array(
-            "idbooks" => $this->input->post('idbooks')
-        );
-        $this->booksInformation->deleteBook($data);
-        echo "Record deleted successfully";
-    }
-
-    /**
      * This function is used to borrow a book from the library.
      */
     public function borrowBook()
