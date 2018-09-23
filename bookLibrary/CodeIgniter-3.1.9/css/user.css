@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+body{
+    background-color:#cecece;
+}
+#container{
+    font-family: 'Roboto', snas-serif;
+    margin:0 auto;
+    width: 600px;
+    height: 392px;
+    background-color:#fff;
+}
+form {
+    max-width: 380px;
+    min-width: 350px;
+    padding: 48px 50px;
+    margin: 30px auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#form-header{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+form span{
+    display: inline-block;
+    width: 35%;
+}
+form input[type=text], form input[type=password] {
+    width: 60%;
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding-left: 40px;
+    font-size: 16px;
+}
+form input[type=submit]{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: #FFBC00;
+    color: #fff;
+    border: 1px solid #FFCB00;
+    padding: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#error-msg{
+    color:red;
+    font-size:15px;
+}
